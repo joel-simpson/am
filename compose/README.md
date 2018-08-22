@@ -63,6 +63,7 @@ run as a root user using 'sudo'.
 If you haven't already, create a directory to store this repository using git clone: 
     
     $ git clone https://github.com/artefactual-labs/am.git
+    (or in my case: https://github.com/joel-simpson/am.git )
 
 Run the installation (and all Docker Compose) commands from within the compose directory: 
 
@@ -80,8 +81,8 @@ These are the commands you need to run when starting from scratch:
 `make create-volumes` creates two external volumes. They're heavily used in our
 containers but they are provided in the host machine:
 
-- `$HOME/.am/am-pipeline-data` - the shared directory.
-- `$HOME/.am/ss-location-data` - the transfer source location.
+- `/media/joel/Data/archivematicaData/am-pipeline-data` - the shared directory.
+- `/media/joel/Data/archivematicaData/ss-location-data` - the transfer source location.
 
 ### GNU make
 
